@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.BodyClass = "page-404-full-page";
+    Layout = "~/Views/Error/_Layout.cshtml";
+}
+<div class="error-page">
+    <div class="row">
+        <div class="col-md-12 page-404">
+
+            <div class="error-page-details">                
+                <img alt="" src="~/Common/Images/errors/404.png" />
+                <h3>Truy cập lỗi hoặc không tìm thấy nội dung!</h3>
+                <h4>Vui lòng bấm vào "Quay lại trang chủ" hoặc liên hệ với chúng tôi nếu cần trợ giúp thêm.</h4>                
+                <a href="@Url.Action("Login", "Account")" class="btn green">
+                    Quay lại trang chủ
+                    <em class="fa fa-home"></em>
+                </a>
+            </div>
+
+
+
+            @*<div class="number font-red"> 404 </div>
+                <div class="details">
+                  <h3>@L("OopsYouAreLost")</h3>
+                  <p>
+                    @L("WeCanNotFindThePage")<br>
+                    <a href="@Url.Action("Login", "Account")" class="link">@L("HomePage")</a>.
+                  </p>
+                </div>*@
+
+        </div>
+    </div>
+
+</div>
